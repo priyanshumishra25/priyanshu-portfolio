@@ -1,7 +1,7 @@
 import { about } from "./about";
 import type { Experience, TimelineEntry } from "./types";
 
-/** Every role and its dates live here. Pages, the resume and PAI read from this. */
+/** Every role and its dates live here. Pages and PAI read from this. */
 export const experience: Experience[] = [
   {
     id: "armsoa",

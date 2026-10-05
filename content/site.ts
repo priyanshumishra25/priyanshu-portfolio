@@ -17,8 +17,8 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/priyanshu-mishra-unsw",
 
   /**
-   * Optional. Put each PDF in /public and list it here.
-   * /resume shows one download action per entry beside the text version.
+   * Put each PDF in /public and list it here. The first entry is the default
+   * on /resume; the others are one click away.
    */
   resumePdfs: [
     { label: "Software Engineer", href: "/PriyanshuMishra_SoftwareEngineer.pdf" },

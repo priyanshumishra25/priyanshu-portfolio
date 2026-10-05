@@ -3,7 +3,7 @@ import type { FeaturedProject, Project, WorkbenchProject } from "./types";
 
 /**
  * Every project on the site. Order is editorial, not chronological.
- * Adding an entry here feeds the Work page, project pages, the resume,
+ * Adding an entry here feeds the Work page, project pages,
  * the sitemap and PAI. Repository URLs are copied exactly from GitHub,
  * never guessed.
  */

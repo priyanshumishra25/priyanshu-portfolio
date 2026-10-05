@@ -76,7 +76,7 @@ export const workspaceObjects: WorkspaceObject[] = [
   {
     id: "resume",
     label: "The Boring Version™",
-    description: "A plain, printable resume.",
+    description: "The resume, as a PDF.",
     action: { type: "link", href: "/resume" },
     Art: ResumeSheet,
     pos: { left: 36, top: 57, width: 14 },
