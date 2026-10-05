@@ -106,6 +106,12 @@ describe("contact details", () => {
       );
     }
   });
+
+  it("points every resume PDF at a file in public/", () => {
+    for (const pdf of site.resumePdfs) {
+      expect(statSync(path.join(ROOT, "public", pdf.href)).isFile(), pdf.href).toBe(true);
+    }
+  });
 });
 
 describe("ArmsOA is past employment", () => {

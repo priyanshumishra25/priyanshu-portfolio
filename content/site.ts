@@ -17,10 +17,13 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/priyanshu-mishra-unsw",
 
   /**
-   * Optional. Put the PDF in /public and set e.g. "/resume.pdf".
-   * When set, /resume shows a "Download PDF" action beside the text version.
+   * Optional. Put each PDF in /public and list it here.
+   * /resume shows one download action per entry beside the text version.
    */
-  resumePdf: "/PriyanshuMishra_SoftwareEngineer.pdf",
+  resumePdfs: [
+    { label: "Software Engineer", href: "/PriyanshuMishra_SoftwareEngineer.pdf" },
+    { label: "AI Engineer", href: "/PriyanshuMishra_AIEngineer.pdf" },
+  ],
 } as const;
 
 export type SiteConfig = typeof site;

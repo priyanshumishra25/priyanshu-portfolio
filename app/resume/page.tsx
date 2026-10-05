@@ -50,16 +50,17 @@ export default function ResumePage() {
         <p className="text-ink-soft font-mono text-xs tracking-wider uppercase">
           The Boring Version™
         </p>
-        <div className="flex gap-2">
-          {site.resumePdf && (
+        <div className="flex flex-wrap gap-2">
+          {site.resumePdfs.map((pdf) => (
             <a
-              href={site.resumePdf}
+              key={pdf.href}
+              href={pdf.href}
               download
               className="border-line bg-mustard shadow-hard rounded-full border-2 px-4 py-1.5 text-sm font-semibold"
             >
-              Download PDF
+              {pdf.label} PDF
             </a>
-          )}
+          ))}
           <PrintButton />
         </div>
       </div>

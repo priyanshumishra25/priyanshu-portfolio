@@ -25,14 +25,14 @@ npm run dev                  # http://localhost:3000
 
 Everything lives in `/content`. UI components never hardcode facts, links or dates.
 
-| What                          | Where                                                                                                                                      |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Name, email, GitHub, LinkedIn | `content/site.ts`                                                                                                                          |
-| Resume PDF                    | Put it in `public/` and set `resumePdf: "/resume.pdf"` in `content/site.ts`. `/resume` then shows "Download PDF" next to the text version. |
-| Roles and dates               | `content/experience.ts` (`period: { start: "2026-06", end: "2026-09" \| "present" }`). Pages, the resume and PAI all read from here.       |
-| Education                     | `content/about.ts`                                                                                                                         |
-| Projects                      | `content/projects.ts`                                                                                                                      |
-| Production URL                | `NEXT_PUBLIC_SITE_URL`                                                                                                                     |
+| What                          | Where                                                                                                                                          |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name, email, GitHub, LinkedIn | `content/site.ts`                                                                                                                              |
+| Resume PDFs                   | Put each PDF in `public/` and list it in `resumePdfs` (`{ label, href }`) in `content/site.ts`. `/resume` shows one download button per entry. |
+| Roles and dates               | `content/experience.ts` (`period: { start: "2026-06", end: "2026-09" \| "present" }`). Pages, the resume and PAI all read from here.           |
+| Education                     | `content/about.ts`                                                                                                                             |
+| Projects                      | `content/projects.ts`                                                                                                                          |
+| Production URL                | `NEXT_PUBLIC_SITE_URL`                                                                                                                         |
 
 ### Projects
 
